@@ -1,0 +1,37 @@
+1. Problem#2 Overview
+Daisy loves playing games with words. Recently, she has been playing the following Deletive Editing 
+word game with Daniel.
+Daisy picks a word, for example, "DETERMINED". On each game turn, Daniel calls out a letter, for 
+example, 'E', and Daisy removes the first occurrence of this letter from the word, getting 
+"DTERMINED". On the next turn, Daniel calls out a letter again, for example, 'D', and Daisy removes 
+its first occurrence, getting "TERMINED". They continue with 'I', getting "TERMNED", with 'N', getting 
+"TERMED", and with 'D', getting "TERME". Now, if Daniel calls out the letter 'E', Daisy gets "TRME", but 
+there is no way she can get the word "TERM" if they start playing with the word "DETERMINED".
+Daisy is curious if she can get the final word of her choice, starting from the given initial word, by 
+playing this game for zero or more turns. Your task it help her to figure this out.
+% deletiveEditing(Initial,End).
+Each word consists of at least one and at most 30 uppercase English letters; Initial is the Daisy's 
+initial word for the game; End is the final word that Daisy would like to get at the end of the game.
+?- deletiveEditing(['D','E','T','E','R','M','I','N','E','D'], ['T','R','M','E']).
+True.
+?- deletiveEditing(['D','E','T','E','R','M','I','N','E','D'], ['T','E','R','M']).
+False.
+?- deletiveEditing(['D','E','I','N','S','T','I','T','U','T','I','O','N','A','L','I','Z','A','T','I','O','N'], ['D','O','N','A','T','I','O','N']).
+True.
+?- deletiveEditing(['C','O','N','T','E','S','T'], ['C','O','D','E']).
+False.
+?- deletiveEditing(['S','O','L','U','T','I','O','N'], ['S','O','L','U','T','I','O','N']).
+True.
+
+2. Problem#2 Components:
+This program consists of the following engines:
+	 Planner Engine: is responsible for:
+	 Taking the query in prolog entered by the user.
+	 Apply the planning algorithm using informed search algorithm (greedy
+algorithm) to get the path. This algorithm should be implemented in prolog. 
+
+
+3. Problem#2 Criteria
+Accept Input from user (not hard coded).
+Informed search.
+heuristic function

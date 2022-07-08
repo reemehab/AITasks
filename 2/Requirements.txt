@@ -1,0 +1,36 @@
+Given a list of positive integer Items whose elements are guaranteed to be in sorted ascending order, 
+and a positive integer Goal, and Output is a list of three elements [A,B,C] taken from items that 
+together add up to goal. The Output must occur inside the items list in that order (ascending order).
+?-threeSum([3,8,9,10,12,14],27,Output).
+Output=[8,9,10];
+Output=[3,10,14].
+?-threeSum([2,4,8,10,12,14],25,Output).
+false.
+?-threeSum([2,4,8,12,14,16],20,Output).
+Output=[2,4,14].
+?-threeSum([1,2,3,4,5,6,7,8,9],12,Output).
+Output=[1,2,9];
+Output=[1,3,8];
+Output=[1,4,7];
+Output=[1,5,6];
+Output=[2,3,7];
+Output=[2,4,6];
+Output=[3,4,5].
+
+2. Problem#1 Components:
+This program consists of the following engines:
+	 Planner Engine: is responsible for:
+	 Taking the query in prolog entered by the user.
+	 Apply the planning algorithm using depth first search or greedy algorithm to 	
+	get the path. This algorithm should be implemented in prolog.
+	 You must solve this problem twice (depth first search and greedy algorithm)
+
+3. Problem#1 Criteria
+	-Accept Input from user (not hard coded).
+	-Planner Engine (Using depth first search algorithm) //Task 1
+	Uninformed search.
+	-Planner Engine (Using greedy algorithm) //Task 2
+	Informed search.
+	-heuristic function
+	(Informed search)
+
