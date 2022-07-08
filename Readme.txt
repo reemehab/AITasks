@@ -1,2 +1,2 @@
 Some of AI Problems 
-Done by prolog and the Requirements of each problems are attached with each problem folder
+Done using prolog and the Requirements of each problem are attached with each problem folder.
